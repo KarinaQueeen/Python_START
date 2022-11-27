@@ -3,3 +3,8 @@
 
 Вывод: единственное значение типа bool (True либо False)
 """
+print('Введите значения логических выражений (1 или 0)')
+a = int(input('1 предикат:'))
+b = int(input('2 предикат:'))
+c = int(input('3 предикат:'))
+print (((not(a or b or c)) == (not a or not b or not c)))
