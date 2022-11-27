@@ -11,3 +11,9 @@
 0.56
 11
 """
+numbers = input('Число = ')
+sum = 0
+for i in numbers:
+    if i != '.':
+        sum = int (i) + sum
+print(f'Сумма цифр числа {numbers} равна {sum}')
