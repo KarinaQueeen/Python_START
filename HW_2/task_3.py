@@ -16,3 +16,5 @@
 3
 6.62
 """
+
+print(round(sum(el for el in {i: (1+1/i)**i for i in range(1, int(input('N = ')) + 1)}.values()), 2))
