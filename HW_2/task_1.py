@@ -11,9 +11,8 @@
 0.56
 11
 """
-numbers = input('Число = ')
-sum = 0
-for i in numbers:
-    if i != '.':
-        sum = int (i) + sum
-print(f'Сумма цифр числа {numbers} равна {sum}')
+
+num = input('Число = ')
+sum_num = 0
+sum_num = sum([int(lm) for lm in num if lm.isdigit()])
+print(f'Сумма цифр числа {num} равна {sum_num}')
