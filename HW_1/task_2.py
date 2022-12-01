@@ -7,4 +7,4 @@ print('Введите значения логических выражений (
 a = int(input('1 предикат:'))
 b = int(input('2 предикат:'))
 c = int(input('3 предикат:'))
-print (((not(a or b or c)) == (not a and not b and not c)))
+print(((not (a or b or c)) == (not a and not b and not c)))

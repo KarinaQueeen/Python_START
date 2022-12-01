@@ -18,5 +18,4 @@ with open('indexes.txt') as data:
 for i in range(-num, num):
     if i in index_list:
         prod *= new_list[i]
-        print(f'индекс ({i})')
 print(prod)

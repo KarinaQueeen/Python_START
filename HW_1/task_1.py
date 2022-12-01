@@ -16,4 +16,4 @@ True
 False
 """
 num = int(input('Введите день недели:'))
-print (num == 6 or num == 7)
+print(num == 6 or num == 7)
