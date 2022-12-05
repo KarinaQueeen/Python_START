@@ -11,3 +11,32 @@
 3x^2+2x+1=0
 9x^5+7x^4+7x^3+12x^2+8x+18=0
 """
+new_list = []
+data = open('HW_4_task_3.txt')
+for el in data:
+    new_list.append(el)
+data.close()
+new_list = [l for l in new_list if l != '\n']
+
+abc1 = new_list[0].split(' + ')
+a = abc1[-1].split(' = ')
+abc1[-1] = a[0]
+abc2 = new_list[1].split(' + ')
+a = abc2[-1].split(' = ')
+abc2[-1] = a[0]
+
+for i in abc2:
+    abc1.append('-' + i)
+
+polynomial = []
+
+for p in abc1:
+    polynomial.append(p)
+    polynomial.append(' + ')
+polynomial[-1] = ' = 0'   # все до чего я смогла додуматься :)
+
+print(polynomial)
+data = open('HW_4_task_4.txt', 'a', )
+data.writelines(polynomial)
+data.writelines("\n")
+data.close()
